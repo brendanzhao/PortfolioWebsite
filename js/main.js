@@ -1,9 +1,9 @@
 $(document).ready(function() {
   $(window).scroll(function () { 
-    if ($(window).scrollTop() >= 300) {
+    if ($(window).scrollTop() >= $("header").height()) {
       $('#nav').addClass('fixed');
     }
-    else if ($(window).scrollTop() < 300) {
+    else if ($(window).scrollTop() < $("header").height()) {
       $('#nav').removeClass('fixed');
     }
   });
