@@ -11,6 +11,10 @@ body {
     line-height: 1.4;
 }
 
+p {
+    margin: 1em 0;
+}
+
 h1 {
     font-size: 85px;
     font-weight: 700;
@@ -32,6 +36,13 @@ h3 {
     font-weight: 700;
     text-align: center;
     margin: 0;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0.8em 0;
 }
 
 header {
@@ -77,14 +88,23 @@ header {
 
 .content-wrapper {
     position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0; 
+}
+
+.inner-content-wrapper {
+    position: relative;
     max-width: 1000px;
-    height: 1500px;
-    background: #fcebbd;
     margin: 0 auto; 
 }
 
-.marginhack {
-    margin-top: 75px
+.color1 {
+    background-color: #efc94d;
+}
+
+.color2 {
+    background-color: #43b29d;
 }
 
 .portrait {    
@@ -99,6 +119,11 @@ header {
     background: url('../img/me.png');
     background-size: cover;
     margin: 5px auto;
+}
+
+.half-content {
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .browsehappy {
