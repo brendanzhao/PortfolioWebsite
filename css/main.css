@@ -12,7 +12,7 @@ body {
 }
 
 p {
-    margin: 1em 0;
+    margin: 0;
 }
 
 h1 {
@@ -35,7 +35,7 @@ h3 {
     font-size: 35px;
     font-weight: 700;
     text-align: center;
-    margin: 0;
+    margin: 0 0 0.8em 0;
 }
 
 h4 {
@@ -50,6 +50,21 @@ header {
     background: #e1f2fa;  
     margin: 0 auto;
     padding: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+i {
+    margin: 0 30px;
+    padding: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.8);
+    box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.8);
 }
 
 .splash-text {
@@ -90,7 +105,7 @@ header {
     position: relative;
     width: 100%;
     margin: 0 auto;
-    padding: 100px 0; 
+    padding: 80px 0; 
 }
 
 .inner-content-wrapper {
@@ -107,6 +122,10 @@ header {
     background-color: #43b29d;
 }
 
+.color3 {
+    background-color: #e1793d;
+}
+
 .portrait {    
     width: 220px;
     height: 220px;
@@ -118,12 +137,21 @@ header {
     box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.8);
     background: url('../img/me.png');
     background-size: cover;
-    margin: 5px auto;
+    margin: 15px auto;
 }
 
 .half-content {
     max-width: 400px;
     margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+a.icon:visited, a.icon:hover, a.icon:focus, a.icon:active { 
+    text-decoration: none; 
+    color:#292929 
 }
 
 .browsehappy {
