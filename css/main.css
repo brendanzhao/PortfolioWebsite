@@ -16,6 +16,10 @@ p {
     font-size: 0.9em;
 }
 
+b {
+    color: #ff5722;
+}
+
 h1 {
     font-size: 2.5em;
     font-weight: 700;
@@ -40,11 +44,12 @@ h3 {
 }
 
 header {
-    background: #e1f2fa;  
+    background-image: url('../img/header.png');
+    /*subtlepatterns.com*/
 }
 
 footer {
-    background-color: #e15f3d;
+    background-color: #bec1c2;
     margin: 0 auto;
     font-size: 0.9em;  
     text-align: center;
@@ -59,14 +64,11 @@ i {
     margin: 10px 8px 0 8px;
     padding: 12px;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border: 2px solid #e15f3d;
+    color: #ffffff;
 }
 
 .splash-text {
     max-width: 1000px;
-    background: #e1f2fa;
     margin: 0 auto;
     padding: 60px 0;
     text-align: center;
@@ -77,8 +79,9 @@ i {
 }
 
 #nav {
-    background: #d3eda3;
+    background: #111111;
     text-align: center;
+    opacity: 0.85;
 }
 
 #nav li {
@@ -86,11 +89,16 @@ i {
     font-weight: 700;
 }
 
-#nav li a:hover,
-#nav li a:focus {
+#nav li a {
+    color: #ffffff;
+}
+
+#nav li a:hover {
     background: none;
     border: none;
-    color: #7D26CD;
+    color: #ff5722;
+    transition: color .2s ease-in-out;
+    -webkit-transition: color .2s ease-in-out;
 }
 
 .fixed {
@@ -112,29 +120,29 @@ i {
 }
 
 .color1 {
-    background-color: #efc94d;
+    background-color: #292929;
 }
 
 .color2 {
-    background-color: #43b29d;
+    background-color: #ffffff;
 }
 
 .color3 {
-    background-color: #e1793d;
+    background-color: #dee1e2;
+}
+
+.white-text {
+    color: #ffffff;
 }
 
 .portrait {
     width: 120px;
-    height: 120px;    
+    height: 120px;
+    margin: 0 auto 30px auto;    
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.8);
-    -moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.8);
-    box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.8);
     background: url('../img/me.png');
     background-size: cover;
-    margin: 0 auto 30px auto;
+    border: 2px solid gray;
 }
 
 .text-content {
@@ -156,13 +164,31 @@ i {
     text-align: center;
 }
 
-a.icon:visited, a.icon:hover, a.icon:focus, a.icon:active {
-    text-decoration: none; 
-    color:#292929 
+.icon {
+    font-size: 1.8em;
+    opacity: 0.70;
+    transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
 }
 
-.iconsize {
-    font-size: 1.8em;
+.icon:hover {
+    opacity: 1;
+}
+
+.twitter {
+    background-color: #3686be;
+}
+
+.github {
+    background-color: #93cc76;
+}
+
+.linkedin {
+    background-color: #e8c558;
+}
+
+.email {
+    background-color: #f6936f;
 }
 
 .browsehappy {
@@ -170,16 +196,6 @@ a.icon:visited, a.icon:hover, a.icon:focus, a.icon:active {
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
-}
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
 }
 
 /*
@@ -220,7 +236,7 @@ a.icon:visited, a.icon:hover, a.icon:focus, a.icon:active {
         height: 160px;
     }
 
-    .iconsize {
+    .icon {
         font-size: 2.4em;
     }
 }
@@ -273,7 +289,7 @@ a.icon:visited, a.icon:hover, a.icon:focus, a.icon:active {
         list-style-position: outside;
     }
 
-    .iconsize {
+    .icon {
         font-size: 3em;
     }
 }
