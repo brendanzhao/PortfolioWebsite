@@ -6,7 +6,7 @@ html,
 
 body {
     color: #292929;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 400;
     line-height: 1.4;
 }
@@ -17,7 +17,7 @@ p {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 2.5em;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -25,7 +25,7 @@ h1 {
 }
     
 h2 {
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-weight: 300;
     color: #666666;
     letter-spacing: 1px;
@@ -33,7 +33,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2.2em;
+    font-size: 1.5em;
     font-weight: 700;
     text-align: center;
     margin: 0 0 0.8em 0;
@@ -56,14 +56,12 @@ ul {
 }
 
 i {
-    margin: 10px 20px 0 20px;
-    padding: 20px;
+    margin: 10px 8px 0 8px;
+    padding: 12px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    -webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.8);
-    -moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.8);
-    box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.8);
+    border: 2px solid #e15f3d;
 }
 
 .splash-text {
@@ -75,7 +73,7 @@ i {
 }
 
 .nav-wrapper {
-    height: 44px;
+    height: 41px;
 }
 
 #nav {
@@ -85,6 +83,7 @@ i {
 
 #nav li {
     padding: 4px;
+    font-weight: 700;
 }
 
 #nav li a:hover,
@@ -124,9 +123,9 @@ i {
     background-color: #e1793d;
 }
 
-.portrait {    
-    width: 220px;
-    height: 220px;
+.portrait {
+    width: 120px;
+    height: 120px;    
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -135,16 +134,22 @@ i {
     box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.8);
     background: url('../img/me.png');
     background-size: cover;
-    margin: 0px auto;
+    margin: 0 auto 30px auto;
 }
 
-.padded {
+.text-content {
     padding: 0 15px;
+    text-align: center;
 }
 
 .half-content {
     max-width: 400px;
     margin: 0 auto;
+}
+
+.half-content li {
+    margin-left: -3em;
+    list-style-position: inside;
 }
 
 .center {
@@ -154,6 +159,10 @@ i {
 a.icon:visited, a.icon:hover, a.icon:focus, a.icon:active {
     text-decoration: none; 
     color:#292929 
+}
+
+.iconsize {
+    font-size: 1.8em;
 }
 
 .browsehappy {
@@ -177,20 +186,42 @@ a.icon:visited, a.icon:hover, a.icon:focus, a.icon:active {
  * Styling for tablets
  */
 @media only screen and (min-width:30em)  {
+    body {
+        font-size: 0.95em;
+    }
+
     h1 {
-        font-size: 4.9em;
+        font-size: 4.0em;
     }
 
     h2 {
-        font-size: 2.1em;
+        font-size: 2.0em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    i {
+        margin: 10px 14px 0 14px;
+        padding: 16px;
     }
 
     #nav li {
-        padding: 8px;
+        padding: 6px;
     }
 
     .nav-wrapper {
-        height: 52px;
+        height: 46px;
+    }
+
+    .portrait {    
+        width: 160px;
+        height: 160px;
+    }
+
+    .iconsize {
+        font-size: 2.4em;
     }
 }
 
@@ -198,12 +229,51 @@ a.icon:visited, a.icon:hover, a.icon:focus, a.icon:active {
  * Styling for desktops
  */
 @media only screen and (min-width: 48em) {
-    /* Style adjustments for viewports that meet the condition */
+    body {
+        font-size: 1em;
+    }
+
     h1 {
         font-size: 5.3em;
     }
 
     h2 {
         font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 1.7em;
+    }
+
+    i {
+        margin: 10px 20px 0 20px;
+        padding: 20px;
+    }
+
+    #nav li {
+        padding: 7px;
+    }
+
+    .nav-wrapper {
+        height: 50px;
+    }
+
+    .portrait {    
+        margin: 0px auto;
+        width: 200px;
+        height: 200px;
+    }
+
+    .text-content {
+        text-align: left;
+    }
+
+    .half-content li {
+        margin-left: 0;
+        list-style-position: outside;
+    }
+
+    .iconsize {
+        font-size: 3em;
     }
 }
