@@ -16,7 +16,9 @@ p {
     font-size: 0.9em;
 }
 
-b {
+a {
+    font-weight: 700;
+    text-decoration: none;
     color: #ff5722;
 }
 
@@ -64,7 +66,16 @@ i {
     margin: 10px 8px 0 8px;
     padding: 12px;
     border-radius: 50%;
+    border: 3px solid #bec1c2;
     color: #ffffff;
+    font-size: 1.8em;
+    opacity: 0.70;
+    transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+}
+
+i:hover {
+    opacity: 1;
 }
 
 .splash-text {
@@ -107,14 +118,12 @@ i {
 }
 
 .content-wrapper {
-    position: relative;
     width: 100%;
     margin: 0 auto;
     padding: 70px 0; 
 }
 
 .inner-content-wrapper {
-    position: relative;
     max-width: 1000px;
     margin: 0 auto; 
 }
@@ -142,7 +151,7 @@ i {
     border-radius: 50%;
     background: url('../img/me.png');
     background-size: cover;
-    border: 2px solid gray;
+    border: 2px solid #bec1c2;
 }
 
 .text-content {
@@ -162,17 +171,6 @@ i {
 
 .center {
     text-align: center;
-}
-
-.icon {
-    font-size: 1.8em;
-    opacity: 0.70;
-    transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
-}
-
-.icon:hover {
-    opacity: 1;
 }
 
 .twitter {
@@ -221,6 +219,7 @@ i {
     i {
         margin: 10px 14px 0 14px;
         padding: 16px;
+        font-size: 2.4em;
     }
 
     #nav li {
@@ -234,10 +233,6 @@ i {
     .portrait {    
         width: 160px;
         height: 160px;
-    }
-
-    .icon {
-        font-size: 2.4em;
     }
 }
 
@@ -264,6 +259,7 @@ i {
     i {
         margin: 10px 20px 0 20px;
         padding: 20px;
+        font-size: 3em;
     }
 
     #nav li {
@@ -287,9 +283,5 @@ i {
     .half-content li {
         margin-left: 0;
         list-style-position: outside;
-    }
-
-    .icon {
-        font-size: 3em;
     }
 }
