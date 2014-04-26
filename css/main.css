@@ -66,16 +66,17 @@ i {
     margin: 10px 8px 0 8px;
     padding: 12px;
     border-radius: 50%;
-    border: 3px solid #bec1c2;
-    color: #ffffff;
+    border: 3px solid #bbbbbb;
+    color: #eeeeee;
     font-size: 1.8em;
-    opacity: 0.70;
-    transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
+    opacity: 0.8;
+    transition: opacity .2s linear, color .2s linear;
+    -webkit-transition: opacity .2s linear, color .2s linear;
 }
 
 i:hover {
     opacity: 1;
+    color: #ffffff;
 }
 
 .splash-text {
@@ -102,14 +103,14 @@ i:hover {
 
 #nav li a {
     color: #ffffff;
+    transition: color .2s linear;
+    -webkit-transition: color .2s linear;
 }
 
 #nav li a:hover {
     background: none;
     border: none;
-    color: #ff5722;
-    transition: color .2s ease-in-out;
-    -webkit-transition: color .2s ease-in-out;
+    color: #ff5722; 
 }
 
 .fixed {
@@ -149,7 +150,7 @@ i:hover {
     height: 120px;
     margin: 0 auto 30px auto;    
     border-radius: 50%;
-    background: url('../img/me.png');
+    background: url('../img/me.jpg');
     background-size: cover;
     border: 2px solid #bec1c2;
 }
