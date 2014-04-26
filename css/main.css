@@ -273,9 +273,14 @@ i:hover {
     }
 
     .portrait {    
-        margin: 0px auto;
         width: 200px;
         height: 200px;
+        margin-left: 15px;
+        margin-bottom: 0;
+    }
+
+    .two-third-content {
+        padding-left: 0;     
     }
 
     .text-content {
