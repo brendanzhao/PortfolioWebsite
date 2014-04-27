@@ -12,6 +12,7 @@ body {
 p {
     margin: 0;
     font-size: 0.9em;
+    display: inline;
 }
 
 a {
@@ -78,7 +79,7 @@ i:hover {
 }
 
 .splash-text {
-    max-width: 1000px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 60px 0;
     text-align: center;
@@ -132,7 +133,7 @@ i:hover {
 }
 
 .inner-content-wrapper {
-    max-width: 1000px;
+    max-width: 960px;
     margin: 0 auto; 
 }
 
@@ -195,8 +196,12 @@ i:hover {
 
 .half-content li {
     margin-left: -2.7em;
-    list-style-position: inside;
-    list-style: disc;
+    list-style: none;
+}
+
+.bullet {
+    font-weight: 700;
+    margin-right: 0.5em;
 }
 
 .center {
@@ -320,7 +325,12 @@ i:hover {
     }
 
     .half-content li {
-        margin-left: 0;
+        margin-left: 1em;
+        list-style: disc;
         list-style-position: outside;
+    }
+
+    .bullet {
+        display: none;
     }
 }
