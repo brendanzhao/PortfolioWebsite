@@ -1,5 +1,6 @@
 ##Portfolio Website 2014
 ####About
 This the first iteration of my personal website.
-It is built with love and the help of [H5BP](http://html5boilerplate.com/), [jQuery](http://http://jquery.com/), and [PureCSS](http://purecss.io/).
+It is handcrafted with love in each and every pixel.
+Check me out, [Brendan Zhao](www.brendanzhao.com).
 
