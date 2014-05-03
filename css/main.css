@@ -12,7 +12,6 @@ body {
 p {
     margin: 0;
     font-size: 0.9em;
-    display: inline;
 }
 
 a {
@@ -158,6 +157,10 @@ i:hover {
     vertical-align: top;
 }
 
+.inline {
+    display: inline;
+}
+
 .color1 {
     background-color: #292929;
 }
@@ -185,12 +188,12 @@ i:hover {
 }
 
 .text-content {
-    padding: 0 15px;
+    padding: 0 20px;
     text-align: center;
 }
 
 .half-content {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -300,7 +303,7 @@ i:hover {
     .portrait {    
         width: 200px;
         height: 200px;
-        margin-left: 15px;
+        margin-left: 20px;
         margin-bottom: 0;
     }
 
@@ -324,6 +327,10 @@ i:hover {
         text-align: left;
     }
 
+    .half-content {
+        max-width: 400px
+    }
+
     .half-content li {
         margin-left: 1em;
         list-style: disc;
@@ -332,5 +339,9 @@ i:hover {
 
     .bullet {
         display: none;
+    }
+
+    .inline {
+        display: block;
     }
 }
