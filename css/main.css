@@ -25,9 +25,9 @@ h1 {
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin: 0;    
+    margin: 0;
 }
-    
+
 h2 {
     font-size: 1.5em;
     font-weight: 300;
@@ -51,9 +51,9 @@ header {
 footer {
     background-color: #bec1c2;
     margin: 0 auto;
-    font-size: 0.9em;  
+    font-size: 0.8em;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 
 ul {
@@ -61,20 +61,11 @@ ul {
 }
 
 i {
-    margin: 10px 8px 0 8px;
-    padding: 12px;
-    border-radius: 50%;
-    border: 3px solid #bbbbbb;
-    color: #eeeeee;
-    font-size: 1.8em;
-    opacity: 0.8;
+    margin: 0 16px;
+    color: #888 ;
+    font-size: 1.6em;
     transition: opacity .2s linear, color .2s linear;
     -webkit-transition: opacity .2s linear, color .2s linear;
-}
-
-i:hover {
-    opacity: 1;
-    color: #ffffff;
 }
 
 .splash-text {
@@ -90,7 +81,7 @@ i:hover {
 
 #nav {
     width: 100%;
-    background: #303030;   
+    background: #303030;
     text-align: center;
     opacity: 0.95;
     z-index: 3;
@@ -105,7 +96,7 @@ i:hover {
     margin: 7px 15px;
     padding: 4px;
     font-weight: 700;
-    display: inline-block; 
+    display: inline-block;
 }
 
 #nav li a {
@@ -117,23 +108,29 @@ i:hover {
 #nav li a:hover {
     background: none;
     border: none;
-    color: #ff5722; 
+    color: #ff5722;
 }
 
 .fixed {
-    position: fixed !important; 
-    top: 0 !important; 
+    position: fixed !important;
+    top: 0 !important;
 }
 
 .content-wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 70px 0; 
+    padding: 70px 0;
 }
 
 .inner-content-wrapper {
     max-width: 960px;
-    margin: 0 auto; 
+    margin: 0 auto;
+}
+
+.pre-footer {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 70px;
 }
 
 .flexible {
@@ -180,7 +177,7 @@ i:hover {
 .portrait {
     width: 120px;
     height: 120px;
-    margin: 0 auto 30px auto;    
+    margin: 0 auto 30px auto;
     border-radius: 50%;
     background: url('../img/me.jpg');
     background-size: cover;
@@ -211,21 +208,22 @@ i:hover {
     text-align: center;
 }
 
-.twitter {
-    background-color: #3686be;
+.twitter:hover {
+    color: #55acee;
 }
 
-.github {
-    background-color: #93cc76;
+.github:hover {
+    color: #111111;
 }
 
-.linkedin {
-    background-color: #e8c558;
+.linkedin:hover {
+    color: #007bb6;
 }
 
-.email {
-    background-color: #f6936f;
+.email:hover {
+    color: #f6936f;
 }
+
 
 .browsehappy {
     margin: 0.2em 0;
@@ -255,16 +253,15 @@ i:hover {
     }
 
     i {
-        margin: 10px 14px 0 14px;
-        padding: 16px;
-        font-size: 2.4em;
+        margin: 13px;
+        font-size: 1.7em;
     }
 
     #nav li {
         padding: 6px;
     }
 
-    .portrait {    
+    .portrait {
         width: 160px;
         height: 160px;
     }
@@ -291,16 +288,15 @@ i:hover {
     }
 
     i {
-        margin: 10px 20px 0 20px;
-        padding: 20px;
-        font-size: 3em;
+        margin: 0 10px;
+        font-size: 1.8em;
     }
 
     #nav li {
         padding: 7px;
     }
 
-    .portrait {    
+    .portrait {
         width: 200px;
         height: 200px;
         margin-left: 20px;
@@ -320,7 +316,7 @@ i:hover {
     }
 
     .two-third-content {
-        padding-left: 0;     
+        padding-left: 0;
     }
 
     .text-content {
